@@ -8,15 +8,15 @@ using ModSettings;
 
 namespace TLD_RelativeConsumptionTime
 {
-	internal class RelativeConsumptionTime_Settings : ModSettingsBase
+	internal class RelativeConsumptionTime_Settings : JsonModSettings
 	{
 		[Section("Relative Consumption Time Multiplier")]
 		[Name("Drinking Time Multiplier")]
-		[Slider(0.2f, 4f, 38)]
+		[Slider(0.2f, 5f, 48)]
 		public float drinkSliderValue = 1f;
 
 		[Name("Food Item Time Multiplier")]
-		[Slider(0.2f, 4f, 38)]
+		[Slider(0.2f, 5f, 48)]
 		public float foodSliderValue = 1f;
 	}
 
