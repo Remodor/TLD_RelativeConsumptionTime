@@ -12,6 +12,10 @@ namespace RelativeConsumptionTime
         {
             if (gi.m_FoodItem)
             {
+                if (gi.m_FoodItem.m_CaloriesTotal < RCT_Settings.settings.foodMinTreshold)
+                {
+                    return;
+                }
                 restoreTimeToEat = gi.m_FoodItem.m_TimeToEatSeconds;
                 float totalCalories = gi.m_FoodItem.m_CaloriesTotal;
                 float maxPossibleCaloriesByFood = GameManager.GetHungerComponent().m_MaxReserveCalories - GameManager.GetHungerComponent().GetCalorieReserves();
