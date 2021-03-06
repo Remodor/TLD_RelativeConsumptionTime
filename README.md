@@ -4,12 +4,17 @@ Every consume action in *The Long Dark* has a fixed duration, no matter how much
 
 ## Settings
 
-There are two new settings in the *Mod Options*:
+There are four new settings in the *Mod Options*:
 
-1. Drinking Duration Multiplier
-2. Food Duration Multiplier
+- Relative Consumption Time Multiplier:
+  1. Drinking Duration Multiplier
+  2. Food Duration Multiplier
+- Absolute Minimum (in seconds):
+  1. Drinking Minimum Duration
+  2. Food Minimum Duration
 
-For both values a duration of 1 is oriented to the vanilla game. I.e. drinking from nearly empty to full will be close to the original duration. Food behaves accordingly.
+For both values a duration of 1 is oriented to the vanilla game. I.e. drinking half a liter will result in the original duration (Maximum amount to drink is 0.67). Drinking a quarter will be half the duration, etc.
+Eating half of a food item will result in half of the default duration of that food item.
 
 ### Recommendations
 
@@ -17,6 +22,8 @@ I am currently using:
 
 - Drinking Duration Multiplier = 2
 - Food Duration Multiplier = 2
+- Drinking Minimum Duration = 1s
+- Food Minimum Duration = 1s
 
 However, the values are so easily changed and applied right away you can try and modify to your likings.
 

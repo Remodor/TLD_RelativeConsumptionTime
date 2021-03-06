@@ -31,7 +31,8 @@ namespace RelativeConsumptionTime
                 float relativeConsumedCalories = Mathf.Clamp(consumedCalories / totalCalories, 0.1f, 1f);
                 // The above code is extracted from the UseFoodInventoryItem method to circumvent unnecessary calls.
 
-                gi.m_FoodItem.m_TimeToEatSeconds *= relativeConsumedCalories * RCT_Settings.settings.foodSliderValue;
+                gi.m_FoodItem.m_TimeToEatSeconds *= relativeConsumedCalories * RCT_Settings.settings.foodTimeMultiplier;
+                gi.m_FoodItem.m_TimeToEatSeconds = Mathf.Max(gi.m_FoodItem.m_TimeToEatSeconds, RCT_Settings.settings.foodMinDuration);
             }
         }
         internal static void Postfix(PlayerManager __instance, GearItem gi)
@@ -67,7 +68,8 @@ namespace RelativeConsumptionTime
             }
             // The above code is extracted from the CalculateWaterVolumeToDrink method to circumvent unnecessary calls.
             restoreTimeToDrink = ws.m_TimeToDrinkSeconds;
-            ws.m_TimeToDrinkSeconds *= volumeToDrink * 2f * RCT_Settings.settings.drinkSliderValue;
+            ws.m_TimeToDrinkSeconds *= volumeToDrink * 2f * RCT_Settings.settings.drinkTimeMultiplier;
+            ws.m_TimeToDrinkSeconds = Mathf.Max(ws.m_TimeToDrinkSeconds, RCT_Settings.settings.drinkMinDuration);
         }
         internal static void Postfix(PlayerManager __instance, WaterSupply ws)
         {
