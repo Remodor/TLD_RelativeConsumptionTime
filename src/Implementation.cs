@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MelonLoader;
 using UnityEngine;
 
-namespace TLD_RelativeConsumptionTime
+namespace RelativeConsumptionTime
 {
     public class Implementation : MelonMod
     {

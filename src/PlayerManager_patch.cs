@@ -2,7 +2,7 @@
 using UnityEngine;
 
 
-namespace TLD_RelativeConsumptionTime
+namespace RelativeConsumptionTime
 {
     [HarmonyPatch(typeof(PlayerManager), "UseFoodInventoryItem")]
     internal class PlayerManager_UseFoodInventoryItem_Patch
