@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using MelonLoader;
 
@@ -36,5 +35,5 @@ using MelonLoader;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: MelonInfo(typeof(RelativeConsumptionTime.Implementation), "RelativeConsumptionTime", "1.0.0", "Remodor")]
+[assembly: MelonInfo(typeof(RelativeConsumptionTime.Implementation), "RelativeConsumptionTime", "1.2.0", "Remodor")]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
