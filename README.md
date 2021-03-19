@@ -48,4 +48,4 @@ The mod can always be uninstalled. Just delete the `RelativeConsumptionTime.dll`
 
 ## Modding Discord Server
 
-If you have any questions/ suggestions or you just wanna say *"Thank you!"* visit the **[TLD Modding Discord Server](https://discord.gg/nb2jQez)** server!
+If you have any questions/ suggestions or you just wanna say *"Thank you!"* visit the **[TLD Modding Discord Server](https://discord.gg/nb2jQez)**!
