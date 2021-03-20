@@ -10,12 +10,8 @@ namespace RelativeConsumptionTime
         internal static float restoreTimeToEat; //Used to restore previous value after the duration is changed.
         internal static void Prefix(PlayerManager __instance, GearItem gi)
         {
-            if (gi.m_FoodItem)
+            if (gi.m_FoodItem && gi.m_FoodItem.m_CaloriesTotal >= RCT_Settings.settings.foodMinTreshold)
             {
-                if (gi.m_FoodItem.m_CaloriesTotal < RCT_Settings.settings.foodMinTreshold)
-                {
-                    return;
-                }
                 restoreTimeToEat = gi.m_FoodItem.m_TimeToEatSeconds;
                 float totalCalories = gi.m_FoodItem.m_CaloriesTotal;
                 float maxPossibleCaloriesByFood = GameManager.GetHungerComponent().m_MaxReserveCalories - GameManager.GetHungerComponent().GetCalorieReserves();
@@ -41,7 +37,7 @@ namespace RelativeConsumptionTime
         }
         internal static void Postfix(PlayerManager __instance, GearItem gi)
         {
-            if (gi.m_FoodItem)
+            if (gi.m_FoodItem && gi.m_FoodItem.m_CaloriesTotal >= RCT_Settings.settings.foodMinTreshold)
             {
                 gi.m_FoodItem.m_TimeToEatSeconds = restoreTimeToEat;
             }
