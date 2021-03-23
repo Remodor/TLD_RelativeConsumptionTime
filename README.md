@@ -11,16 +11,18 @@ Every consume action in *The Long Dark* has a fixed duration, no matter how much
 There are five new settings in the *Mod Options*:
 
 - Relative Consumption Time Multiplier:
-  > Every consumable is now relative. This is the amount it is multiplied with.
-  A value of 1 is orientated to the vanilla game. I.e. drinking half a liter and a value of 1 will result in the vanilla duration.
+
+  *Every consumable is now relative. This is the amount it is multiplied with. A value of 1 is orientated to the vanilla game. I.e. drinking half a liter and a value of 1 will result in the vanilla duration.*
   - Drinking Duration Multiplier
   - Food Duration Multiplier
 - Absolute Minimum (in seconds):
-  > This is the absolute minimum time to consume an item.
+
+  *This is the absolute minimum time to consume an item.*
   - Drinking Minimum Duration
   - Food Minimum Duration
 - Minimum Threshold to Apply Multiplier
-  > For items which have a low calories count, e.g. the *cat tail stalk* or a *tea*, the multiplier unnecessary prolongs the consume duration. With this option you can specify a minimum calories count for the multiplier to apply.
+
+  _For items which have a low calories count, e.g. the *cat tail stalk* or a *tea*, the multiplier unnecessary prolongs the consume duration. With this option you can specify a minimum calories count for the multiplier to apply._
   - Minimum Calories
 
 ### Recommendations
